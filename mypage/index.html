@@ -71,6 +71,12 @@
         .mybtn > button{
             margin-right: 10px;
         }
+        .movietitle{
+            height: 50%;
+        }
+        .moviedesc{
+            height: 50%;
+        }
     </style>
     </head>
     <body>
@@ -84,10 +90,21 @@
                     placeholder="name@example.com">
                 <label for="floatingInput">영화 url</label>
             </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">별점</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>-- 선택하기 --</option>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+            </div>
             <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment
-                    here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">코멘트</label>
+                    here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">코멘트</label>
             </div>
             <div class="mybtn">
                 <button type="button" class="btn btn-dark">기록하기</button>
@@ -99,52 +116,68 @@
                 <div class="col">
                     <div class="card h-100">
                         <img
-                            src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                            src="https://w.namu.la/s/c9ba02a6e315d754e406990be1612035d7c92f763f184c84d299e4245d63d6e8d6189cc85c46c70ec185c72cbf740b4a2e4e5528406108d02f3e5c23947525d00139a7790ef67684d083d9e885f22b3193ee14374258acac39a6539a4750c51b348997662745e981ab2181f5e8ce8049"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                            <div class="movietitle">
+                                <h5 class="card-title">해리 포터와 마법사의 돌</h5>
+                                <p class="card-text">9와 4분의 3번 승강장이 어느쪽이죠?</p>
+                            </div>
+                            <div class="moviedesc">
+                                <p>⭐⭐</p>
+                                <p class="mycomment">처음으로 영화관에서 본 작품<br>너무 어려서 기억이 없음</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
                         <img
-                            src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                            src="https://w.namu.la/s/52e0f3956969008efb594c4286598a96641d3c40341701a3cda09c0707f2645b2288585330270b5ea62eb3c42964b7854c4f4b6d3cd1b4b0e9310de8ca801716e1454a12faf825d870f9f7c6460791b00055b689dcb93d52136a34c9e9d575ac8e7b02f6bf414a1f7626735fde296042"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                            <div class="movietitle">
+                                <h5 class="card-title">미스 페레그린과 이상한 아이들의 집</h5>
+                                <p class="card-text">서두르지 않아도 돼. 난 영원히 여기 있으니까.</p>
+                            </div>
+                            <div class="moviedesc">
+                                <p>⭐⭐⭐⭐</p>
+                                <p class="mycomment">상당히 재밌었던 작품<br>사무엘 L. 잭슨의 motherfxxker를 못 들었던 걸로 기억</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
                         <img
-                            src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                            src="https://w.namu.la/s/884809616a2b51db7afafc6156ff8dddd0f4eaf879b2d82b0f41a35c52c93acd7ed1d3a2867b4a2e22a9e39ee095023be5197320b7dbab518ab0d9728364d275d915a8575cf7f9d02d80cbe0e5a46a2aa1ad512988acae773f4f700fbba1ab4b06c4ea9c965e201f29813d1dee3b86f2"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                            <div class="movietitle">
+                                <h5 class="card-title">연공</h5>
+                                <p class="card-text">당신은 행복했었습니까? 너무나도 행복했었습니다.</p>
+                            </div>
+                            <div class="moviedesc">
+                                <p>⭐⭐⭐⭐</p>
+                                <p class="mycomment">가끔 울고 싶을 때 찾아보는 작품<br>슬프기도 하고 이젠 볼 수 없는 사람도 나와서 기분이 묘함</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
                         <img
-                            src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                            src="https://w.namu.la/s/3b0939e9c8f790754917cb0e7151f425d6ecec7ba44fe712cc75377da148e7a8038367bd40e8200e38f5ebed2aa2937cfe6947d6e77426d5846640bacbc44d6dea407aa5e3a54c1ac53652fb3fd2abce8e893efb9c5a51a775de01376baf927247a41599f07639dae8e9333fde5269e8"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                            <div class="movietitle">
+                                <h5 class="card-title">극한 직업</h5>
+                                <p class="card-text">왜 자꾸 장사가 잘 되는데?!!</p>
+                            </div>
+                            <div class="moviedesc">
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <p class="mycomment">그냥 웃긴 작품<br>수원가면 왕갈비 통닭 한 번은 먹어봐야지</p>
+                            </div>
                         </div>
                     </div>
                 </div>
